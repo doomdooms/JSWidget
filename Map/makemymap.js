@@ -1,5 +1,3 @@
-//AIzaSyAhfKmflQzgMCYn9ebFYxEQnjuP967NKlE
-
 var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
