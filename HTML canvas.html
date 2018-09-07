@@ -6,12 +6,26 @@
 </head>
 <body>
 <canvas id="draw" width="800" height="800"></canvas>
+<div id="controls">
+    <div class = 'Onoff'>
+        <input type="radio" id="contactChoice1"
+               name="contact" value="on" checked>
+        <label for="contactChoice1">On</label>
+
+        <input type="radio" id="contactChoice2"
+               name="contact" value="off">
+        <label for="contactChoice2">Off</label>
+    </div>
+  Brush Width:
+    <input title="Width" id="Width" type="range" min="1" max="100">
+</div>
 <script>
     const canvas = document.querySelector('#draw');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     // ctx.globalCompositeOperation = 'difference';
+    let width = document.getElementById('Width');
 
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
@@ -38,7 +52,7 @@
             hue = 0;
         } hue++;
 
-        if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        if (ctx.lineWidth >= width.value || ctx.lineWidth <= 1) {
             direction = !direction;
         }
 
@@ -48,6 +62,7 @@
             ctx.lineWidth--;
         }
     }
+
 
     canvas.addEventListener('mousemove',draw);
     canvas.addEventListener('mousedown',(e) => {
