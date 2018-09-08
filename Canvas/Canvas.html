@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas</title>
+    <link rel="stylesheet" type="text/css" href="Canvas.css">
+</head>
+
+
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<div id="controls">
+    <div class = 'Onoff'>
+        <input type="radio" id="onBtn"
+               name="contact" value="on" checked>
+        <label for="onBtn">On</label>
+
+        <input type="radio" id="offBtn"
+               name="contact" value="off">
+        <label for="offBtn">Off</label>
+    </div>
+  Brush Width:
+    <input title="Width" id="Width" type="range" min="1" max="100">
+</div>
+
+<script src = Canvas.js>
+</script>
+
+</body>
+</html>
