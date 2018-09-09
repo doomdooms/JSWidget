@@ -2,3 +2,19 @@ html, body {
     margin:0;
 }
 
+#controls {
+    width: 14em;
+    height: 5em;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
+#controls div {
+    margin: auto;
+}
