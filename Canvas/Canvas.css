@@ -2,7 +2,7 @@ html, body {
     margin:0;
 }
 
-#controls {
+.controls {
     width: 14em;
     height: 5em;
     background-color: yellow;
@@ -13,8 +13,23 @@ html, body {
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.controls.down {
+    -ms-transform: translate(0, 4em); /* IE 9 */
+    -webkit-transform: translate(0, 4em); /* Safari */
+    transform: translate(0, 4em);
 }
 
 #controls div {
     margin: auto;
+}
+
+#controlTab {
+    width: 14em;
+    height: 10em;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0 0;
 }
