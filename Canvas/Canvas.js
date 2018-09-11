@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 let width = document.getElementById('Width');
 let onBtn = document.getElementById('onBtn');
 let offBtn = document.getElementById('offBtn');
-let controlTab = document.getElementById('controlTab');
+let control = document.querySelector('.controls');
 
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
@@ -63,4 +63,4 @@ canvas.addEventListener('mousedown',(e) => {
 });
 canvas.addEventListener('mouseup',() => isDrawing = false);
 canvas.addEventListener('mouseout',() => isDrawing = false);
-controlTab.addEventListener('click',toggleOpen);
+control.addEventListener('click',toggleOpen);

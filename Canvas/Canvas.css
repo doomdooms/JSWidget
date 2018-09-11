@@ -20,6 +20,8 @@ html, body {
     -ms-transform: translate(0, 4em); /* IE 9 */
     -webkit-transform: translate(0, 4em); /* Safari */
     transform: translate(0, 4em);
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 #controls div {
